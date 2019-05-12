@@ -24,7 +24,7 @@ Things you may want to cover:
 * ...
 
 * memo
-
+https://github.com/kkoji/rails-lecture
 docker-compose run web rails new . --force --database=mysql
 docker-compose build
 docker-compose up -d   --起動
@@ -35,3 +35,6 @@ docker-compose stop
 
 docker-compose run web bundle exec rails g model board name:string title:string body:text
 docker-compose run web bundle exec rake db:migrate
+
+pry-byebug
+docker attach rails-docker_web_1
