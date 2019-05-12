@@ -15,6 +15,15 @@
     </tr>
   </thead>
   <tbody>
+    <% @boards.each do |board| %>
+      <tr>
+        <th><%= board.id %></th>
+        <td><%= board.title %></td>
+        <td><%= board.name %></td>
+        <td><%= board.created_at %></td>
+        <td><%= board.updated_at %></td>
+      </tr>
+    <% end %>
     <tr>
       <th>1</th>
       <td>雑談掲示板</td>
