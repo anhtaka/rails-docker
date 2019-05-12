@@ -1,3 +1,2 @@
 class Board < ApplicationRecord
 end
- 

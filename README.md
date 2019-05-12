@@ -34,3 +34,4 @@ docker-compose run web bundle exec rake db:create
 docker-compose stop
 
 docker-compose run web bundle exec rails g model board name:string title:string body:text
+docker-compose run web bundle exec rake db:migrate
