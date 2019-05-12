@@ -22,3 +22,11 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+* memo
+
+docker-compose run web rails new . --force --database=mysql
+docker-compose build
+docker-compose up -d
+docker-compose ps
+docker-compose run web bundle exec rake db:create
