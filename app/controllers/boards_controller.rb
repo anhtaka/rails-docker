@@ -10,8 +10,13 @@ class BoardsController < ApplicationController
 
     def create
         Board.create(board_params)
-        binding.pry
+        #binding.pry
     end
+
+    def show
+        @board = Board.find(params[:id])
+        # binding.pry
+    end 
     private
     
     def board_params
