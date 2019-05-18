@@ -17,6 +17,10 @@ class BoardsController < ApplicationController
         @board = Board.find(params[:id])
         # binding.pry
     end 
+    def edit
+        @board = Board.find(params[:id])
+        # binding.pry
+    end 
     private
     
     def board_params
