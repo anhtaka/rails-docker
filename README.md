@@ -38,3 +38,6 @@ docker-compose run web bundle exec rake db:migrate
 
 pry-byebug
 docker attach rails-docker_web_1
+
+
+docker-compose exec web bundle exec rake db:seed
