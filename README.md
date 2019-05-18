@@ -41,3 +41,6 @@ docker attach rails-docker_web_1
 
 
 docker-compose exec web bundle exec rake db:seed
+
+docker-compose exec web bundle exec rails g kaminari:config
+docker-compose exec web bundle exec rails g kaminari:view bootstrap4
