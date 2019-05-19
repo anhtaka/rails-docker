@@ -27,8 +27,8 @@ class BoardsController < ApplicationController
 
     def show
         #@comment = @board.comments.new
-        @comment = @board.comments.new
-        #@comment = Comment.new(board_id: @board.id)
+        #@comment = @board.comments.new
+        @comment = Comment.new(board_id: @board.id)
         #binding.pry
     end 
 
