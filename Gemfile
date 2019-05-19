@@ -33,8 +33,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.0.0'
 gem 'kaminari'
 gem 'mini_racer'
-gem 'rails-i18n'
-
+gem 'rails-i18n', '~> 5.1' # For 5.0.x, 5.1.x and 5.2.x
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -50,7 +49,6 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'pry-byebug'
   gem 'annotate'
-  
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
