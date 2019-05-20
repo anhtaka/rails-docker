@@ -26,8 +26,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  username: <%= ENV['DB_USERNAME'] || 'xxxxxxxxxx' %>
-  password: <%= ENV['DB_PASSWORD'] || 'ppppppppp' %>
+  username: <%= ENV['DB_USERNAME'] || 'xxxxxxxxxx' %> #add
+  password: <%= ENV['DB_PASSWORD'] || 'ppppppppp' %> #add
   host: <%= ENV['DB_HOST'] || 'localhost' %>    #add
   database: app_test
 
