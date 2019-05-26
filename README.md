@@ -52,7 +52,7 @@ docker-compose exec web bundle exec rails g kaminari:view bootstrap4
  - rspec
   docker-compose exec web bundle exec rails g rspec:model User
   docker-compose exec web bundle exec rails g rspec:controller Users
-
+docker-compose exec web bundle exec rspec -f d ./spec/models/
 
   docker-compose run web rails console
  
