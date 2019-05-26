@@ -41,6 +41,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   #gem 'rails-flog', require: 'flag'
   gem 'rails-flog', require: 'flog'
+  gem 'rspec-rails', '~> 3.8'
 end
 
 group :development do
