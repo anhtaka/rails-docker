@@ -54,7 +54,7 @@ RSpec.describe UsersController, type: :controller do
       end
 
       it 'リファラーにリダイレクトされること' do
-        expect(response).to redirect_to(@referer)
+        expect(response).to redirect_to redirect_to(@referer)
         
       end
 
@@ -64,6 +64,7 @@ RSpec.describe UsersController, type: :controller do
 
       it 'パスワード確認のエラーメッセージが含まれていること' do
         expect(flash[:error_messages]).to include 'パスワード（確認）とパスワードの入力が一致しません'
+                                                    #パスワード（確認）とパスワードの入力が一致しません
       end
     end
   end
