@@ -14,10 +14,18 @@
 #  index_users_on_name  (name) UNIQUE
 #
 
-require 'test_helper'
+require 'rails_helper'
 
-class UserTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+RSpec.describe User, type: :model do
+  #pending "add some examples to (or delete) #{__FILE__}"
+  describe '#age' do
+    context '20年前の生年月日の場合' do
+      let(:user) { User.new(birthday: Time.zone.now - 20.years)}
+
+      it '年齢が20歳であること' do
+        expect(user.age).to eq 20
+      end
+    end
+  end
 end
+
