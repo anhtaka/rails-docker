@@ -44,3 +44,8 @@ docker-compose exec web bundle exec rake db:seed
 
 docker-compose exec web bundle exec rails g kaminari:config
 docker-compose exec web bundle exec rails g kaminari:view bootstrap4
+
+
+ docker-compose run web bundle update rails
+ docker-compose build
+ 
