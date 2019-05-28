@@ -183,6 +183,8 @@ GEM
       rspec-mocks (~> 3.8.0)
       rspec-support (~> 3.8.0)
     rspec-support (3.8.0)
+    rspec_junit_formatter (0.4.1)
+      rspec-core (>= 2, < 4, != 2.12.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -247,6 +249,7 @@ DEPENDENCIES
   rails-flog
   rails-i18n
   rspec-rails (~> 3.8)
+  rspec_junit_formatter
   sass-rails (~> 5.0)
   spring
   spring-watcher-listen (~> 2.0.0)
